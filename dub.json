@@ -1,0 +1,9 @@
+{
+	"name": "miniupnpc",
+	"description": "D bindings for the MiniUPnPc",
+    "homepage": "http://miniupnp.free.fr/",
+    "license": "BSD 3-clause",
+
+    "targetType": "sourceLibrary",
+    "libs": ["miniupnpc"]
+}
