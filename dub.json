@@ -1,6 +1,6 @@
 {
-	"name": "miniupnpc",
-	"description": "D bindings for the MiniUPnPc",
+    "name": "miniupnpc",
+    "description": "D bindings for the MiniUPnPc",
     "homepage": "http://miniupnp.free.fr/",
     "license": "BSD 3-clause",
 
