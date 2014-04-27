@@ -10,8 +10,8 @@ struct NameValue {
 struct NameValueParserData {
     NameValue* lh_first;
     char[64] curelt;
-	char* portListing;
-	int portListingLength;
+    char* portListing;
+    int portListingLength;
 }
 
 extern (C): nothrow:
