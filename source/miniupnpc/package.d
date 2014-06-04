@@ -15,8 +15,8 @@ enum MINIUPNPC_API_VERSION = 9;
 
 /* Structures definitions : */
 struct UPNParg {
-    const char* elt;
-    const char* val;
+	const char* elt;
+	const char* val;
 }
 
 struct UPNPDev {
@@ -30,8 +30,8 @@ struct UPNPDev {
 extern (C): nothrow:
 
 char* simpleUPnPcommand(int, const char*, const char*,
-                  const char *, UPNParg*,
-                  int*);
+		const char *, UPNParg*,
+		int*);
 
 
 /* upnpDiscover()
@@ -48,9 +48,9 @@ char* simpleUPnPcommand(int, const char*, const char*,
  * If sameport is not null, SSDP packets will be sent from the source port
  * 1900 (same as destination port) otherwise system assign a source port. */
 UPNPDev* upnpDiscover(int delay, const char * multicastif,
-             const char * minissdpdsock, int sameport,
-             int ipv6,
-             int * error);
+		const char * minissdpdsock, int sameport,
+		int ipv6,
+		int * error);
 /* freeUPNPDevlist()
  * free list returned by upnpDiscover() */
 void freeUPNPDevlist(UPNPDev* devlist);
@@ -87,9 +87,9 @@ struct UPNPUrls {
  * free allocated memory.
  */
 int UPNP_GetValidIGD(UPNPDev* devlist,
-                 UPNPUrls* urls,
-				 IGDdatas* data,
-				 char* lanaddr, int lanaddrlen);
+		UPNPUrls* urls,
+		IGDdatas* data,
+		char* lanaddr, int lanaddrlen);
 
 /* UPNP_GetIGDFromUrl()
  * Used when skipping the discovery process.
@@ -97,12 +97,12 @@ int UPNP_GetValidIGD(UPNPDev* devlist,
  *   0 - Not ok
  *   1 - OK */
 int UPNP_GetIGDFromUrl(const char* rootdescurl,
-                   UPNPUrls* urls,
-                   IGDdatas* data,
-                   char* lanaddr, int lanaddrlen);
+		UPNPUrls* urls,
+		IGDdatas* data,
+		char* lanaddr, int lanaddrlen);
 
 void GetUPNPUrls(UPNPUrls*, IGDdatas*,
-            const char*, uint);
+		const char*, uint);
 
 void FreeUPNPUrls(UPNPUrls*);
 
