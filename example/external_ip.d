@@ -16,7 +16,7 @@ void main()
     UPNPUrls urls;
     IGDdatas data;
     char[32] lanaddr;
-    UPNP_GetValidIGD(upnp, &urls, &data, lanaddr.ptr, to!int(lanaddr.length));
+    UPNP_GetValidIGD(upnp, &urls, &data, lanaddr.ptr, lanaddr.length.to!int);
 
     char[32] addr;
     UPNP_GetExternalIPAddress(urls.controlURL, data.first.servicetype.ptr, addr.ptr);

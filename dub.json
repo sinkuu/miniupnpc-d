@@ -3,18 +3,6 @@
 	"description": "D bindings to the MiniUPnPc",
 	"homepage": "http://miniupnp.free.fr/",
 	"license": "BSD 3-clause",
-
 	"libs": ["miniupnpc"],
-	"configurations": [
-		{
-			"name": "library",
-			"targetType": "sourceLibrary",
-		},
-		{
-			"name": "example",
-			"targetType": "executable",
-			"targetName": "external_ip",
-			"sourceFiles": ["example/external_ip.d"]
-		}
-	]
+	"targetType": "sourceLibrary",
 }
