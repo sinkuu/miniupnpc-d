@@ -9,7 +9,7 @@ enum UPNPCOMMAND_UNKNOWN_ERROR = -1;
 enum UPNPCOMMAND_INVALID_ARGS = -2;
 enum UPNPCOMMAND_HTTP_ERROR = -3;
 
-extern (C): nothrow:
+extern(C) nothrow @nogc:
 
 ulong UPNP_GetTotalBytesSent(const char* controlURL,
 		const char* servicetype);

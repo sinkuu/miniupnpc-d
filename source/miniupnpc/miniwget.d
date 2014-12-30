@@ -1,6 +1,6 @@
 module miniupnpc.miniwget;
 
-extern (C): nothrow:
+extern(C) nothrow @nogc:
 
 void* getHTTPResponse(int s, int* size);
 

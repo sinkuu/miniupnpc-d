@@ -27,7 +27,7 @@ struct UPNPDev {
 	char[2] buffer;
 }
 
-extern (C): nothrow:
+extern(C) nothrow @nogc:
 
 char* simpleUPnPcommand(int, const char*, const char*,
 		const char *, UPNParg*,

@@ -31,7 +31,7 @@ struct IGDdatas {
 	IGDdatas_service tmp;
 }
 
-extern (C): nothrow:
+extern(C) nothrow @nogc:
 
 void IGDstartelt(void*, const char*, int);
 void IGDendelt(void*, const char*, int);

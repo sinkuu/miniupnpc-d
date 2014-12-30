@@ -14,7 +14,7 @@ struct NameValueParserData {
 	int portListingLength;
 }
 
-extern (C): nothrow:
+extern(C) nothrow @nogc:
 
 /* ParseNameValue() */
 void ParseNameValue(const char* buffer, int bufsize,

@@ -1,6 +1,6 @@
 module miniupnpc.upnperrors;
 
-extern (C): nothrow:
+extern(C) nothrow @nogc:
 
 const(char)* strupnperror(int err);
 

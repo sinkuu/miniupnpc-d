@@ -27,7 +27,7 @@ struct PortMappingParserData {
 	portMappingElt curelt;
 }
 
-extern (C): nothrow:
+extern(C) nothrow @nogc:
 
 void ParsePortListing(const char * buffer, int bufsize,
 		PortMappingParserData* pdata);
